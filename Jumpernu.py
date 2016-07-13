@@ -457,6 +457,72 @@ def equationsolvermain(jumper,upperlimit,varnum,y,resolution,vlist,equation,Chec
     #print("solver")
     #return jumper, upperlimit, varnum, y, resolution, vlist, equation, Check1, Check2, rescount, rescountmax, reschange, startnumber, initialres, reslowbound, answerx, answery, finalres, question, supportvar, cvar
 
+
+
+def solve_equation():
+    '''
+    Do one time initialization to solve the equation and then call solve_equation_for_range()
+
+    '''
+    #   Substitute '<' for '=' in equation
+
+    #   Evaluate if equation is true or false and assign to priorEquationTrueFalse
+    #
+    #   Set rescountmax
+    #
+    #   Call solve_equation_for_range()
+
+    pass
+
+def solve_equation_for_range(startRange, endRange, resolution):
+    '''
+
+    Solve a single equation for a given range and resolution
+
+    Look for a solution given the current resolution, jumping to different possible solution values and evaluating them.
+
+    This function returns True when it found a solution, otherwise it returns False
+
+    '''
+
+    # Input arguments: Start range, end range, resolution
+
+    # while solution not found:
+
+    #   Loop the variable from start range to end range stepping by resolution
+    #     
+    #       Substitute variable into equation
+    #     
+    #       Evaluate if equation is true or false and assign to changingEquationTrueFalse
+
+    #       If changingEquationTrueFalse != priorEquationTrueFalse
+    #           
+    #           Call reschange() to determine new resolution & range
+    #           
+    #           Call solve_equation_for_range() with the new resolution & range
+    #           
+    #           If solution found, return True
+
+
+    solutionFound = False
+
+    while solutionFound == False:
+        return True
+
+    return False
+
+def evaluate_possible_solution():
+    pass
+
+
+def res_change():
+    '''
+    Change the resolution by which a solution is searched for, making it finer.
+    '''
+    pass
+
+
+
 if __name__ == '__main__':
 
     start2(jumper, upperlimit, varnum, y, resolution, vlist, equation, Check1, Check2, rescount, rescountmax, reschange, startnumber, initialres, reslowbound, answerx, answery, finalres, question, supportvar, cvar)
